@@ -15,3 +15,5 @@ class Link(models.Model):
   active : models.BooleanField(default=True)
 
 
+  def __str__(self) -> str:
+    return self.target_url
